@@ -1,0 +1,34 @@
+{
+  "name": "carno-php/cache",
+  "license": "MIT",
+  "require": {
+    "php": "^7.2",
+    "carno-php/coroutine": "^1.0",
+    "carno-php/promise": "^1.0",
+    "carno-php/timer": "^1.0"
+  },
+  "suggest": {
+    "ext-apcu": "Memory stored with APCu",
+    "carno-php/redis": "Network stored with Redis"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7",
+    "carno-php/redis": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Carno\\Cache\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Carno\\Cache\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
