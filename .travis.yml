@@ -13,4 +13,6 @@ install:
 - printf "\n\n\n\nyes\n\n\n" | pecl install swoole
 - composer install
 
-script: ./vendor/bin/phpunit tests --process-isolation
+script:
+- ./vendor/bin/phpunit tests --filter MemoryTest::testLocal
+- ./vendor/bin/phpunit tests --filter NetworkTest::testRedis

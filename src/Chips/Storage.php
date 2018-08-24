@@ -1,6 +1,6 @@
 <?php
 /**
- * Data operates
+ * Storage API
  * User: moyo
  * Date: 24/10/2017
  * Time: 12:13 PM
@@ -10,7 +10,7 @@ namespace Carno\Cache\Chips;
 
 use Carno\Cache\Contracts\Storing;
 
-trait DataOps
+trait Storage
 {
     /**
      * @var Storing

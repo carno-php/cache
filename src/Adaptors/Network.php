@@ -8,10 +8,10 @@
 
 namespace Carno\Cache\Adaptors;
 
-use Carno\Cache\Chips\DataOps;
-use Carno\Cache\Chips\DefValues;
 use Carno\Cache\Chips\Delegate;
-use Carno\Cache\Chips\OpsKey;
+use Carno\Cache\Chips\Prefixed;
+use Carno\Cache\Chips\Properties;
+use Carno\Cache\Chips\Storage;
 use Carno\Cache\Exception\IllegalNetworkDriverException;
 use Carno\Cache\Refreshing;
 use Carno\Cache\Stores\Redis as RedisStorage;
@@ -20,7 +20,7 @@ use Carno\Redis\Redis as RedisClient;
 
 abstract class Network
 {
-    use DefValues, OpsKey, DataOps, Delegate;
+    use Properties, Prefixed, Storage, Delegate;
 
     /**
      * Redis constructor.

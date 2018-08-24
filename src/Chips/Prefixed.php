@@ -1,6 +1,6 @@
 <?php
 /**
- * Operates key
+ * Prefixed cache-key
  * User: moyo
  * Date: 26/10/2017
  * Time: 10:56 AM
@@ -8,7 +8,7 @@
 
 namespace Carno\Cache\Chips;
 
-trait OpsKey
+trait Prefixed
 {
     /**
      * @param string $input
