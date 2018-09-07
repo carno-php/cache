@@ -12,7 +12,6 @@
     "carno-php/redis": "Network stored with Redis"
   },
   "require-dev": {
-    "phpunit/phpunit": "~7",
     "carno-php/redis": "^1.0"
   },
   "autoload": {
