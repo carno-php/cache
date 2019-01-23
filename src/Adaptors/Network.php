@@ -23,7 +23,7 @@ abstract class Network
     use Properties, Prefixed, Storage, Delegate;
 
     /**
-     * Redis constructor.
+     * Network constructor.
      * @param Refreshing $refresher
      */
     final public function __construct(Refreshing $refresher)
